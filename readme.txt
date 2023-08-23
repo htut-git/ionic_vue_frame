@@ -1,3 +1,10 @@
-AuthToken store in Ionic Storage
+Ionic Vue Frame 
+================
+With AuthToken
 
-guards like middleware
+
+Include
+=======
+-light mode , dark mode
+-multi language (vue i18n)
+-tailwind css
