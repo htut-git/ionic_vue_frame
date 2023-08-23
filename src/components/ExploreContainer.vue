@@ -1,7 +1,6 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <slot></slot>
   </div>
 </template>
 
@@ -13,14 +12,13 @@ defineProps({
 
 <style scoped>
 #container {
-  text-align: center;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* 
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -35,5 +33,5 @@ defineProps({
 
 #container a {
   text-decoration: none;
-}
+} */
 </style>
