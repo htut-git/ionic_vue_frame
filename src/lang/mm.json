@@ -1,6 +1,13 @@
 {
-    "home":"ပင်မစာမျက်နှာ",
-    "language":"ဘာသာစကား",
-    "mm":"မြန်မာ",
-    "en":"English"
+	"account": "အကောင့် | အကောင့်များ",
+	"appreance": "အသွင်အပြင်",
+	"dark_mode": "အမှောင် မု",
+	"en": "English",
+	"home": "ပင်မစာမျက်နှာ",
+	"language": "ဘာသာစကား",
+	"login_page": "Login Page",
+	"logout": "အကောင့်မှထွက်မည်",
+	"mm": "မြန်မာ",
+	"register_page": "အကောင့်ဖွင့်ရန်",
+	"setting": "ဆက်တင် | ဆက်တင်များ"
 }

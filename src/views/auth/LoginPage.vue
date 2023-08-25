@@ -51,12 +51,12 @@
 
 <script setup lang="ts">
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import store from '@/storage/store';
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router';
-import { useStore } from 'vuex';
-const router = useRouter();
-const store = useStore();
 
+const router = useRouter();
+const storage = store();
 const loginForm = reactive({
     username: '',
     password: '',
@@ -66,8 +66,7 @@ const loginForm = reactive({
 const login = () => {
     console.log(loginForm);
     const token = '3k4jldfjsdnkjfsadjkasdfsdyu8u98u98';
-    store.dispatch('ionicStorage', ['set', 'authToken', token]);
-    store.dispatch('setAuthToken', token)
+    storage.ionicStorage(['set', 'authToken', token]);
     router.push({ name: 'home' });
 }
 </script>

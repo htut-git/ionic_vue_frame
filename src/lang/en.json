@@ -1,8 +1,13 @@
 {
-    "home":"Home",
-    "language":"Language",
-    "mm":"Myanmar",
-    "en":"English",
-    "register_page":"Register Page",
-    "login_page":"Login Page"
+	"account": "Account | Accounts",
+	"appreance": "Appearance",
+	"dark_mode": "Dark Mode",
+	"en": "English",
+	"home": "Home",
+	"language": "Language",
+	"login_page": "Login Page",
+	"logout": "Logout",
+	"mm": "Myanmar",
+	"register_page": "Register Page",
+	"setting": "Setting | Settings"
 }

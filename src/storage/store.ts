@@ -1,25 +1,12 @@
-import { createStore } from "vuex";
+import { defineStore } from "pinia";
 import { Storage } from "@ionic/storage";
-const store = createStore({
-    state() {
-        return {
-            appName: 'Ionic Auth',
-            authToken: '',
-        }
-    },
-    mutations: {
-
-    },
-    getters: {
-        
-    },
+const store = defineStore('store', {
+    state: () => ({
+        appName: 'Ionic Auth',
+        apiKey: '##################################'
+    }),
     actions: {
-
-        async setAuthToken({ state }, value) {
-            state.authToken = value;
-        }
-        ,
-        async ionicStorage({ state }, input: Array<any>) {
+        async ionicStorage(input: Array<any>) {
             const ionicStorage = new Storage();
             await ionicStorage.create();
             const [type, key, value] = input;

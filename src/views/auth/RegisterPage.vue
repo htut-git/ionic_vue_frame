@@ -20,7 +20,8 @@
                                 Email Address</label>
                             <input v-model="registerForm.email" type="email" id="email" autocomplete="email"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
-                                dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="example@example.com" required>
+                                dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="example@example.com" required>
                         </div>
                         <div class="mb-6">
                             <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -46,7 +47,8 @@
                             sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                     </form>
                     <div class="mt-20 flex justify-center">
-                        <router-link :to="{ name: 'login' }" class="">Back to login</router-link>
+                        <ion-button :router-link="{ name: 'login' }" router-direction="back" fill="clear">Clear</ion-button>
+                        <!-- <router-link :to="{ name: 'login' }" class="">Back to login</router-link> -->
                     </div>
                 </div>
             </ExploreContainer>
@@ -57,6 +59,7 @@
 <script setup lang="ts">
 import ExploreContainer from '@/components/ExploreContainer.vue';
 import { reactive } from 'vue';
+import { IonButton } from "@ionic/vue";
 
 const registerForm = reactive({
     name: '',

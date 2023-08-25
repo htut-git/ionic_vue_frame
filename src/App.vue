@@ -7,14 +7,14 @@
 <script setup lang="ts">
 import { IonApp, IonRouterOutlet } from '@ionic/vue';
 import { onMounted, onBeforeMount } from 'vue';
-import { useStore } from 'vuex';
 import { initFlowbite } from 'flowbite'
+import store from '@/storage/store';
 
-const store = useStore();
+const storage = store();
 
 
 onBeforeMount(() => {
-  store.dispatch('ionicStorage', ['get', 'theme']).then(response => {
+  storage.ionicStorage(['get', 'theme']).then(response => {
     if (response == 'dark') {
       document.body.classList.toggle('dark', true);
     }

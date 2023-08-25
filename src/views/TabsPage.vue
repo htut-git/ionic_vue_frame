@@ -20,7 +20,7 @@
 
         <ion-tab-button tab="setting" href="/tabs/setting">
           <ion-icon aria-hidden="true" :icon="cog" />
-          <ion-label>Settings</ion-label>
+          <ion-label>{{ $tc('setting',2) }}</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
